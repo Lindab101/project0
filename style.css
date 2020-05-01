@@ -46,6 +46,20 @@
     display: block;
 }
 
+table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+
+th, td {
+    padding: 0.5%;
+    text-align: left;
+}
+
+th {
+    background-color: #6ba7a3;
+}
+
 /* Add media queries for small screens (when the height of the screen is less than 450px, add a smaller padding and font-size) */
 @media screen and (max-height: 450px) {
     .sidebar {
