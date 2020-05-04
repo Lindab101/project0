@@ -1,3 +1,28 @@
+/* half background image*/
+body, html {
+    height: 100%;
+}
+
+#image {
+    /* The image used */
+    background-image: url("plastic.jpg");
+
+    /* Full height */
+    height: 50%;
+
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+.content {
+    margin-left: 200px;
+}
+
+
+
 /* Style the sidebar - fixed full height */
 .sidebar {
     height: 100%;
@@ -22,21 +47,25 @@
 
 /* Style links on mouse-over */
 .sidebar a:hover {
-    color: #;
+    color: #b6b6b6;
     text-shadow: 2px 2px black;
 }
 
-/* Style the main content */
-.main {
-    margin-left: 200px; /* Same as the width of the sidenav */
-    padding: 0px 10px;
+
+.sidebar .aboutme {
+    border: 30px white;
 }
+
 
 #aboutme, #textaboutme {
     color: white;
     text-align: center;
     margin-left: auto;
     margin-right: auto;
+}
+
+#textaboutme {
+    padding: 3% 10% 3% 10%;
 }
 
 #myphoto {
@@ -70,4 +99,10 @@ th {
     .sidebar a {
         font-size: 16px;
     }
+
+    .main {
+        margin-left: 150px;
+        padding: 0px;
+    }
+
 }
