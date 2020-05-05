@@ -1,79 +1,93 @@
+/* style header */
+#header {
+  box-sizing: border-box;
+  background: white;
+  display: table;
+  width: 100%;
+  height: 25%;
+  position: relative;
+  padding-top: 0.7%;
+}
+
+/* style logo in header */
+.logo {
+    text-align: center;
+    width: 42%;
+}
+
+/* make sure menu is in middle */
+.logo,
+.menu {
+  vertical-align: middle;
+  display: table-cell;
+}
+
+/* Style header links */
+.menu a {
+    padding: 5%;
+    text-decoration: none;
+    color: black;
+    text-align: right;
+    font-size: 160%;
+    vertical-align: middle;
+    display: inline-block;
+}
+
+/* Style links on mouse-over */
+.menu a:hover, .menu a.active {
+    text-shadow: 1px 1px #808080;
+}
+
+.menu ul {
+  text-align: right;
+  padding-right: 4%;
+}
+
+.menu ul li {
+  display: inline-block;
+  vertical-align: top;
+}
+
 /* half background image*/
 body, html {
     height: 100%;
+    margin: 0 0 0 0;
 }
 
 #image {
     /* The image used */
-    background-image: url("plastic.jpg");
+    background-image: url("bladeren.jpg");
 
     /* Full height */
-    height: 50%;
+    height: 20%;
 
     /* Center and scale the image nicely */
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
 
+    position: relative;
 }
 
 .content {
-    margin-left: 200px;
+    margin: 1% 5% 1% 5%;
 }
 
-
-
-/* Style the sidebar - fixed full height */
-.sidebar {
-    height: 100%;
-    width: 200px;
-    position: fixed;
-    z-index: 1;
-    top: 0;
-    left: 0;
-    background-color: #374281;
-    overflow-x: hidden;
-    padding-top: 16px;
+.textcenter {
+    margin: 1% 5% 1% 5%;
 }
 
-/* Style sidebar links */
-.sidebar a {
-    padding: 6px 8px 20px 20px;
-    text-decoration: none;
-    font-size: 20px;
-    color: #f1f1f1;
-    display: block;
+footer {
+    bottom: 0;
+    width: 100%;
+    background-color: #7cbd86;
 }
 
-/* Style links on mouse-over */
-.sidebar a:hover {
-    color: #b6b6b6;
-    text-shadow: 2px 2px black;
-}
-
-
-.sidebar .aboutme {
-    border: 30px white;
-}
-
-
-#aboutme, #textaboutme {
-    color: white;
+#footertxt {
     text-align: center;
-    margin-left: auto;
-    margin-right: auto;
 }
 
-#textaboutme {
-    padding: 3% 10% 3% 10%;
-}
 
-#myphoto {
-    width: 80%;
-    margin-left: auto;
-    margin-right: auto;
-    display: block;
-}
 
 table, th, td {
     border: 1px solid black;
@@ -90,14 +104,10 @@ th {
 }
 
 /* Add media queries for small screens (when the height of the screen is less than 450px, add a smaller padding and font-size) */
-@media screen and (max-height: 450px) {
-    .sidebar {
-        padding-top: 15px;
-        width: 150px;
-    }
+@media screen and (max-width: 500px) {
 
-    .sidebar a {
-        font-size: 16px;
+    .menu a {
+        font-size: 20%;
     }
 
     .main {
@@ -105,4 +115,23 @@ th {
         padding: 0px;
     }
 
+}
+
+
+/* if about me part */
+#aboutme, #textaboutme {
+    color: white;
+    text-align: left;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#textaboutme {
+    padding: 3% 10% 3% 10%;
+}
+
+#myphoto {
+    width: 10%;
+
+    display: block;
 }
