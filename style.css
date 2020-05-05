@@ -12,7 +12,7 @@
 /* style logo in header */
 .logo {
     text-align: center;
-    width: 42%;
+    width: 74%;
 }
 
 /* make sure menu is in middle */
@@ -27,8 +27,8 @@
     padding: 5%;
     text-decoration: none;
     color: black;
-    text-align: right;
-    font-size: 160%;
+    text-align: center;
+    font-size: 150%;
     vertical-align: middle;
     display: inline-block;
 }
@@ -40,7 +40,6 @@
 
 .menu ul {
   text-align: right;
-  padding-right: 4%;
 }
 
 .menu ul li {
@@ -67,6 +66,13 @@ body, html {
     background-size: cover;
 
     position: relative;
+}
+
+.h1text {
+    font-size: 200%;
+    text-align: center;
+    color: black;
+    padding: 1%;
 }
 
 .content {
