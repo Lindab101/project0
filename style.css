@@ -53,12 +53,13 @@ body, html {
     margin: 0 0 0 0;
 }
 
+/* leaf image */
 #image {
     /* The image used */
     background-image: url("bladeren.jpg");
 
     /* Full height */
-    height: 20%;
+    height: 100%;
 
     /* Center and scale the image nicely */
     background-position: center;
@@ -68,33 +69,38 @@ body, html {
     position: relative;
 }
 
+/* text on leaf image */
 .h1text {
     font-size: 200%;
     text-align: center;
     color: black;
     padding: 1%;
+    margin: 1% 5% 1% 5%;
 }
 
+/* contents of webpage */
 .content {
     margin: 1% 5% 1% 5%;
+    background-color: rgba(255, 255, 255, 0.85);
+    padding: 2% 5% 2% 5%;
 }
 
-.textcenter {
-    margin: 1% 5% 1% 5%;
-}
-
+/* footer styling */
 footer {
     bottom: 0;
     width: 100%;
+    height: 2%;
     background-color: #7cbd86;
 }
 
+/* text in footer */
 #footertxt {
     text-align: center;
+    vertical-align: center;
 }
 
 
-
+/* table on research proposal.html*/
 table, th, td {
     border: 1px solid black;
     border-collapse: collapse;
@@ -109,20 +115,37 @@ th {
     background-color: #6ba7a3;
 }
 
-/* Add media queries for small screens (when the height of the screen is less than 450px, add a smaller padding and font-size) */
-@media screen and (max-width: 500px) {
+/* Add media queries for small screens  */
+@media screen and (max-width: 1100px) {
 
     .menu a {
-        font-size: 20%;
+        font-size: 120%;
+    }
+
+    .logo {
+        width: 90%;
     }
 
     .main {
         margin-left: 150px;
         padding: 0px;
     }
-
 }
 
+@media screen and (max-width: 927px) {
+    .menu a {
+        font-size: 80%;
+        padding: 1%;
+    }
+
+    #header {
+        height: 15%;
+    }
+
+    .h1text {
+        font-size: 100%;
+    }
+}
 
 /* if about me part */
 #aboutme, #textaboutme {
