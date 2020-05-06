@@ -51,22 +51,25 @@
 body, html {
     height: 100%;
     margin: 0 0 0 0;
+    background-repeat: repeat-y;
+    position: relative;
+    min-height: 100vh;
+    padding-bottom: 60px;
 }
 
 /* leaf image */
 #image {
     /* The image used */
-    background-image: url("bladeren.jpg");
+    background-image: url("bladeren.jpg");  
 
     /* Full height */
-    height: 100%;
+    height: 20%;
 
     /* Center and scale the image nicely */
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
 
-    position: relative;
 }
 
 /* text on leaf image */
@@ -83,23 +86,15 @@ body, html {
     margin: 1% 5% 1% 5%;
     background-color: rgba(255, 255, 255, 0.85);
     padding: 2% 5% 2% 5%;
+    font-size: 20px;
 }
 
-/* footer styling */
-footer {
-    bottom: 0;
-    width: 100%;
-    height: 2%;
-    background-color: #7cbd86;
+#goals, #valuechain, #crsuc, #PEF, #fash {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
 }
-
-/* text in footer */
-#footertxt {
-    text-align: center;
-    vertical-align: center;
-}
-
-
 /* table on research proposal.html*/
 table, th, td {
     border: 1px solid black;
@@ -148,19 +143,16 @@ th {
 }
 
 /* if about me part */
-#aboutme, #textaboutme {
-    color: white;
-    text-align: left;
-    margin-left: auto;
-    margin-right: auto;
+#aboutme {
+    padding: 5%;
+
 }
 
-#textaboutme {
-    padding: 3% 10% 3% 10%;
-}
 
-#myphoto {
-    width: 10%;
-
+#photoofme {
+    width: 15%;
+    float: left;
     display: block;
+    margin-bottom: 5%;
+    margin-right: 5%;
 }
